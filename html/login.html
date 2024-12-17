@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Login to BookStore" />
+    <title>Login - BookStore</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <table
+        border="0"
+        width="100%"
+        cellpadding="0"
+        cellspacing="0"
+        bgcolor="#f3971b"
+      >
+        <tr>
+          <td>
+            <table
+              border="0"
+              width="85%"
+              cellpadding="15"
+              cellspacing="0"
+              align="center"
+            >
+              <tr>
+                <td>
+                  <font face="arial" color="black" size="5">
+                    <strong>Book Store</strong>
+                  </font>
+                </td>
+                <td width="30%">&nbsp;</td>
+                <td>
+                  <a href="index.html"
+                    ><font face="arial" color="#ffffff" size="3">Home</font></a
+                  >
+                </td>
+                <td>
+                  <a href="shop.html"
+                    ><font face="arial" color="#ffffff" size="3">Shop</font></a
+                  >
+                </td>
+                <td>
+                  <a href="about.html"
+                    ><font face="arial" color="#ffffff" size="3">About</font></a
+                  >
+                </td>
+                <td>
+                  <a href="contact.html"
+                    ><font face="arial" color="#ffffff" size="3"
+                      >Contact</font
+                    ></a
+                  >
+                </td>
+                <td>
+                  <a href="login.html"
+                    ><font face="arial" color="#ffffff" size="3">Login</font></a
+                  >
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Login Title -->
+      <table
+        border="0"
+        width="100%"
+        cellpadding="0"
+        cellspacing="0"
+        bgcolor="#353535"
+      >
+        <tr>
+          <td>
+            <table
+              border="0"
+              width="85%"
+              cellpadding="15"
+              cellspacing="0"
+              align="center"
+            >
+              <tr>
+                <td height="100" align="center" valign="middle">
+                  <font face="arial" size="6" color="#f3971b">
+                    Login to BookStore
+                  </font>
+                  <hr width="70" color="#f3971b" />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Login Form -->
+      <table
+        border="0"
+        width="100%"
+        cellpadding="0"
+        cellspacing="0"
+        bgcolor="#292929"
+      >
+        <tr>
+          <td>
+            <table
+              border="0"
+              width="85%"
+              cellpadding="15"
+              cellspacing="0"
+              align="center"
+            >
+              <tr>
+                <td align="center">
+                  <form
+                    action="#"
+                    method="POST"
+                    onsubmit="return validateLogin()"
+                  >
+                    <table
+                      border="0"
+                      width="40%"
+                      cellpadding="10"
+                      cellspacing="0"
+                    >
+                      <tr>
+                        <td align="center">
+                          <input
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                            required
+                            style="
+                              width: 100%;
+                              padding: 12px;
+                              margin: 8px 0;
+                              border: 1px solid #f3971b;
+                              background: #353535;
+                              color: white;
+                              border-radius: 4px;
+                            "
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <input
+                            type="password"
+                            name="password"
+                            placeholder="Password"
+                            required
+                            style="
+                              width: 100%;
+                              padding: 12px;
+                              margin: 8px 0;
+                              border: 1px solid #f3971b;
+                              background: #353535;
+                              color: white;
+                              border-radius: 4px;
+                            "
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <select
+                            name="role"
+                            required
+                            style="
+                              width: 100%;
+                              padding: 12px;
+                              margin: 8px 0;
+                              border: 1px solid #f3971b;
+                              background: #353535;
+                              color: white;
+                              border-radius: 4px;
+                            "
+                          >
+                            <option value="">Select Role</option>
+                            <option value="customer">Customer</option>
+                            <option value="admin">Admin</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <button
+                            type="submit"
+                            style="
+                              width: 100%;
+                              background-color: #f3971b;
+                              color: white;
+                              border: none;
+                              padding: 14px 20px;
+                              margin: 8px 0;
+                              cursor: pointer;
+                              border-radius: 4px;
+                              font-size: 16px;
+                            "
+                          >
+                            Login
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <font face="arial" color="#ffffff">
+                            <a
+                              href="#"
+                              style="color: #f3971b; text-decoration: none"
+                              >Forgot Password?</a
+                            >
+                          </font>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <font face="arial" color="#ffffff">
+                            Don't have an account?
+                            <a
+                              href="register.html"
+                              style="color: #f3971b; text-decoration: none"
+                              >Register here</a
+                            >
+                          </font>
+                        </td>
+                      </tr>
+                    </table>
+                  </form>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Social Login Options -->
+      <table
+        border="0"
+        width="100%"
+        cellpadding="0"
+        cellspacing="0"
+        bgcolor="#353535"
+      >
+        <tr>
+          <td>
+            <table
+              border="0"
+              width="85%"
+              cellpadding="15"
+              cellspacing="0"
+              align="center"
+            >
+              <tr>
+                <td align="center">
+                  <font face="arial" color="#ffffff" size="3">
+                    Or Login With
+                  </font>
+                </td>
+              </tr>
+              <tr>
+                <td align="center">
+                  <button
+                    onclick="socialLogin('google')"
+                    style="
+                      background-color: #db4437;
+                      color: white;
+                      border: none;
+                      padding: 10px 20px;
+                      margin: 5px;
+                      cursor: pointer;
+                      border-radius: 4px;
+                    "
+                  >
+                    <i class="fab fa-google"></i> Google
+                  </button>
+                  <button
+                    onclick="socialLogin('facebook')"
+                    style="
+                      background-color: #4267b2;
+                      color: white;
+                      border: none;
+                      padding: 10px 20px;
+                      margin: 5px;
+                      cursor: pointer;
+                      border-radius: 4px;
+                    "
+                  >
+                    <i class="fab fa-facebook"></i> Facebook
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <table
+        border="0"
+        width="100%"
+        cellpadding="0"
+        cellspacing="0"
+        bgcolor="#f3971b"
+      >
+        <tr>
+          <td>
+            <table
+              border="0"
+              width="85%"
+              cellpadding="15"
+              cellspacing="0"
+              align="center"
+            >
+              <tr>
+                <td align="center">
+                  <font face="arial" color="#000000">
+                    © 2024 BookStore | All Rights Reserved
+                  </font>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>

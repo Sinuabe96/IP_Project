@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Admin Dashboard for BookStore" />
+    <title>Admin Dashboard - BookStore</title>
+  </head>
+  <body bgcolor="#ffffff">
+    <header>
+      <table
+        border="0"
+        width="100%"
+        cellpadding="0"
+        cellspacing="0"
+        bgcolor="#f3971b"
+      >
+        <tr>
+          <td>
+            <table
+              border="0"
+              width="85%"
+              cellpadding="15"
+              cellspacing="0"
+              align="center"
+            >
+              <tr>
+                <td>
+                  <font face="arial" size="5"><b>BookStore Admin</b></font>
+                </td>
+                <td width="30%">&nbsp;</td>
+                <td>
+                  <a href="index.html"
+                    ><font face="arial" size="3" color="#ffffff">Home</font></a
+                  >
+                </td>
+                <td>
+                  <a href="shop.html"
+                    ><font face="arial" size="3" color="#ffffff">Shop</font></a
+                  >
+                </td>
+                <td>
+                  <a href="orders.html"
+                    ><font face="arial" size="3" color="#ffffff"
+                      >Orders</font
+                    ></a
+                  >
+                </td>
+                <td>
+                  <a href="users.html"
+                    ><font face="arial" size="3" color="#ffffff">Users</font></a
+                  >
+                </td>
+                <td>
+                  <a href="login.html"
+                    ><font face="arial" size="3" color="#ffffff"
+                      >Logout</font
+                    ></a
+                  >
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </header>
+
+    <main>
+      <table
+        border="0"
+        width="100%"
+        cellpadding="0"
+        cellspacing="0"
+        bgcolor="#353535"
+      >
+        <tr>
+          <td>
+            <table
+              border="0"
+              width="85%"
+              cellpadding="15"
+              cellspacing="0"
+              align="center"
+            >
+              <tr>
+                <td height="100" align="center" valign="middle">
+                  <font face="arial" size="6" color="#f3971b"
+                    >Admin Dashboard</font
+                  >
+                  <hr width="70" color="#f3971b" />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <table
+        border="0"
+        width="100%"
+        cellpadding="0"
+        cellspacing="0"
+        bgcolor="#292929"
+      >
+        <tr>
+          <td>
+            <table
+              border="0"
+              width="85%"
+              cellpadding="15"
+              cellspacing="0"
+              align="center"
+            >
+              <tr>
+                <td align="center">
+                  <a href="#products"
+                    ><font face="arial" color="#ffffff"
+                      >Manage Products</font
+                    ></a
+                  >
+                  &nbsp;&nbsp;
+                  <a href="#orders"
+                    ><font face="arial" color="#ffffff">View Orders</font></a
+                  >
+                  &nbsp;&nbsp;
+                  <a href="#users"
+                    ><font face="arial" color="#ffffff">Manage Users</font></a
+                  >
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <table
+        border="0"
+        width="100%"
+        cellpadding="0"
+        cellspacing="0"
+        bgcolor="#353535"
+        id="products"
+      >
+        <tr>
+          <td>
+            <table
+              border="0"
+              width="85%"
+              cellpadding="15"
+              cellspacing="0"
+              align="center"
+            >
+              <tr>
+                <td height="50" align="left">
+                  <font face="arial" size="4" color="#f3971b"
+                    >Manage Products</font
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table
+                    border="1"
+                    width="100%"
+                    cellpadding="10"
+                    cellspacing="0"
+                    bordercolor="#f3971b"
+                  >
+                    <tr bgcolor="#f3971b">
+                      <th><font face="arial">Book Title</font></th>
+                      <th><font face="arial">Author</font></th>
+                      <th><font face="arial">Price</font></th>
+                      <th><font face="arial">Stock</font></th>
+                      <th><font face="arial">Actions</font></th>
+                    </tr>
+                    <tr>
+                      <td align="center">
+                        <font face="arial" color="#ffffff"
+                          >The Great Adventure</font
+                        >
+                      </td>
+                      <td align="center">
+                        <font face="arial" color="#ffffff">John Doe</font>
+                      </td>
+                      <td align="center">
+                        <font face="arial" color="#ffffff">$20.00</font>
+                      </td>
+                      <td align="center">
+                        <font face="arial" color="#ffffff">50</font>
+                      </td>
+                      <td align="center">
+                        <a href="#edit"
+                          ><font face="arial" color="#ffffff">Edit</font></a
+                        >
+                        |
+                        <a href="#delete"
+                          ><font face="arial" color="#ffffff">Delete</font></a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <table
+        border="0"
+        width="100%"
+        cellpadding="0"
+        cellspacing="0"
+        bgcolor="#353535"
+        id="orders"
+      >
+        <tr>
+          <td>
+            <table
+              border="0"
+              width="85%"
+              cellpadding="15"
+              cellspacing="0"
+              align="center"
+            >
+              <tr>
+                <td height="50" align="left">
+                  <font face="arial" size="4" color="#f3971b">View Orders</font>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table
+                    border="1"
+                    width="100%"
+                    cellpadding="10"
+                    cellspacing="0"
+                    bordercolor="#f3971b"
+                  >
+                    <tr bgcolor="#f3971b">
+                      <th><font face="arial">Order ID</font></th>
+                      <th><font face="arial">Customer</font></th>
+                      <th><font face="arial">Books</font></th>
+                      <th><font face="arial">Total</font></th>
+                      <th><font face="arial">Status</font></th>
+                      <th><font face="arial">Actions</font></th>
+                    </tr>
+                    <tr>
+                      <td align="center">
+                        <font face="arial" color="#ffffff">1001</font>
+                      </td>
+                      <td align="center">
+                        <font face="arial" color="#ffffff">Jane Smith</font>
+                      </td>
+                      <td align="center">
+                        <font face="arial" color="#ffffff">2 items</font>
+                      </td>
+                      <td align="center">
+                        <font face="arial" color="#ffffff">$40.00</font>
+                      </td>
+                      <td align="center">
+                        <font face="arial" color="#ffffff">Pending</font>
+                      </td>
+                      <td align="center">
+                        <a href="#update"
+                          ><font face="arial" color="#ffffff"
+                            >Update Status</font
+                          ></a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <table
+        border="0"
+        width="100%"
+        cellpadding="0"
+        cellspacing="0"
+        bgcolor="#353535"
+        id="users"
+      >
+        <tr>
+          <td>
+            <table
+              border="0"
+              width="85%"
+              cellpadding="15"
+              cellspacing="0"
+              align="center"
+            >
+              <tr>
+                <td height="50" align="left">
+                  <font face="arial" size="4" color="#f3971b"
+                    >Manage Users</font
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table
+                    border="1"
+                    width="100%"
+                    cellpadding="10"
+                    cellspacing="0"
+                    bordercolor="#f3971b"
+                  >
+                    <tr bgcolor="#f3971b">
+                      <th><font face="arial">Name</font></th>
+                      <th><font face="arial">Email</font></th>
+                      <th><font face="arial">Role</font></th>
+                      <th><font face="arial">Actions</font></th>
+                    </tr>
+                    <tr>
+                      <td align="center">
+                        <font face="arial" color="#ffffff">John Doe</font>
+                      </td>
+                      <td align="center">
+                        <font face="arial" color="#ffffff"
+                          >john@example.com</font
+                        >
+                      </td>
+                      <td align="center">
+                        <font face="arial" color="#ffffff">Admin</font>
+                      </td>
+                      <td align="center">
+                        <a href="#view"
+                          ><font face="arial" color="#ffffff">View</font></a
+                        >
+                        |
+                        <a href="#remove"
+                          ><font face="arial" color="#ffffff">Remove</font></a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </main>
+
+    <footer>
+      <table
+        border="0"
+        width="100%"
+        cellpadding="0"
+        cellspacing="0"
+        bgcolor="#f3971b"
+      >
+        <tr>
+          <td>
+            <table
+              border="0"
+              width="85%"
+              cellpadding="15"
+              cellspacing="0"
+              align="center"
+            >
+              <tr>
+                <td align="center">
+                  <font face="arial"
+                    >&copy; 2024 BookStore | Admin Dashboard</font
+                  >
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>
